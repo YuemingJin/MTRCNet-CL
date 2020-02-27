@@ -12,6 +12,8 @@ We recently employed our method to participate the [MICCAI'2019 Surgical Workflo
 [Winner](https://www.synapse.org/#!Synapse:syn18824884/wiki/599131) of Phase Recognition Task & 
 [Runner-up](https://www.synapse.org/#!Synapse:syn18824884/wiki/599131) of Tool Presence Detection Task
 
+* The implementation is based on Pytorch 0.4.0
+
 ### Citation
 If you find the code useful for your research, please cite our paper.
 ```
