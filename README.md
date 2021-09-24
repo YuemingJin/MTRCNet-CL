@@ -51,7 +51,8 @@ We recently employed our method to participate the [MICCAI'2019 Surgical Workflo
 * ``$ train_mtrcnet_cl.py`` is to learn the mapping matrix. Note that we first squeeze the parameter of two branches and only train mapping matrix. And then we release all the parameters and jointly train the whole network.
 
   ```
-  Note: We also provide the Single Net version that only for phase recognition (``$ train_singlenet_phase.py``) OR tool presence detection task ``$ train_singlenet_tool.py``.
+  Note: We also provide the Single Net version that only for phase recognition task (``$ train_singlenet_phase.py``) 
+  OR tool presence detection task ``$ train_singlenet_tool.py``.
   ```
 
 ## Testing
@@ -63,8 +64,8 @@ We provide test files for different variants of models:
 * test_singlenet_tool.py:  single-task network for tool presence detection
 
 
-### Citation
-If you find the code useful for your research, please cite our paper.
+## Citation
+If you find the code useful for your research, please cite:
 ```
 @article{jin2020multi,
   title={Multi-task recurrent convolutional network with correlation loss for surgical video analysis},
@@ -77,5 +78,6 @@ If you find the code useful for your research, please cite our paper.
 }
 ```
 
-### Note
-* Contact: Yueming Jin (ymjin5341@gmail.com)
+### Questions
+
+For further question about the code or paper, please contact 'ymjin5341@gmail.com'
