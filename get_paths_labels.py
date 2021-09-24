@@ -111,7 +111,7 @@ train_num_each = []
 val_num_each = []
 test_num_each = []
 
-for i in range(40):
+for i in range(32):
     train_num_each.append(len(all_info[i]))
     for j in range(len(all_info[i])):
         train_file_paths.append(all_info[i][j][0])
@@ -120,7 +120,7 @@ for i in range(40):
 print(len(train_file_paths))
 print(len(train_labels))
 
-for i in range(40, 48):
+for i in range(32, 40):
     val_num_each.append(len(all_info[i]))
     for j in range(len(all_info[i])):
         val_file_paths.append(all_info[i][j][0])
@@ -129,7 +129,7 @@ for i in range(40, 48):
 print(len(val_file_paths))
 print(len(val_labels))
 
-for i in range(48, 80):
+for i in range(40, 80):
     test_num_each.append(len(all_info[i]))
     for j in range(len(all_info[i])):
         test_file_paths.append(all_info[i][j][0])
@@ -155,7 +155,7 @@ train_val_test_paths_labels.append(train_num_each)
 train_val_test_paths_labels.append(val_num_each)
 train_val_test_paths_labels.append(test_num_each)
 
-with open('train40_val8_test32_paths_labels.pkl', 'wb') as f:
+with open('train_val_test_paths_labels.pkl', 'wb') as f:
     pickle.dump(train_val_test_paths_labels, f)
 
 
